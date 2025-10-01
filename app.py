@@ -62,7 +62,7 @@ def test_model():
     mse = mean_squared_error(y, y_pred)
     mae = mean_absolute_error(y, y_pred)
 
-    return jsonify({"mse":mse,"mae":mae, "r2_score": score})
+    return jsonify({"message": "Model tested successfully", "mse":mse,"mae":mae, "r2_score": score})
 
 
 # 3. PREDICT endpoint
