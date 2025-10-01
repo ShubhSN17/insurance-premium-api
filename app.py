@@ -3,7 +3,7 @@ import pandas as pd
 import pickle
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
-from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error
+from sklearn.metrics import mean_squared_error, mean_absolute_error
 
 app = Flask(__name__)
 
@@ -50,7 +50,6 @@ def test_model():
     file = request.files["file"]
     data = pd.read_csv(file)
 
-    # Encode categorical
     data["sex"] = data["sex"].map({"male": 0, "female": 1})
     data["smoker"] = data["smoker"].map({"yes": 1, "no": 0})
 
