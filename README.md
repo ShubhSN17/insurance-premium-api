@@ -71,9 +71,6 @@ Value: Health_Insurance.csv
 ```json
 {
   "message": "Model trained and saved successfully",
-  "r2_score": 0.75,
-  "mse": 340123.45,
-  "mae": 893.21
 }
 ```
 
@@ -94,10 +91,9 @@ Value: test_data.csv
 **Response:**
 ```json
 {
-  "message": "Model tested successfully",
-  "r2_score": 0.72,
   "mse": 352100.55,
-  "mae": 910.78
+  "mae": 910.78,
+  "r2_score": 0.72
 }
 ```
 
@@ -158,12 +154,6 @@ pickle-mixin
 - **scikit-learn** (ML Model)
 - **Pandas** (Data Handling)
 - **Postman** (API Testing)
-
----
-
-## 🎥 Demo
-- API tested using **Postman**  
-- You can record a short demo showing `/train`, `/test`, `/predict` usage.  
 
 ---
 
